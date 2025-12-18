@@ -42,30 +42,5 @@ with open("68279.txt", "r") as f:
     
     print(c, max_sum)
 """
-"""
-#3
-with open("40992.txt", "r") as f:
-    n = [int(x) for x in f]
 
-odd = [x for x in n if x % 2 == 1]
-avg = sum(odd) / len(odd)
-
-c = 0
-max_sum = 0
-
-for i in range(len(n) - 1):
-    a = n[i]
-    b = n[i + 1]
-
-    lst = [a, b]
-
-    lst_krat5 = [x for x in lst if x % 5 == 0]
-    lst_less_avg = [x for x in lst if x < avg]
-    
-
-    if len(lst_krat5) >= 1 and len(lst_less_avg) >= 1:
-        c += 1
-   
-print(c)
-"""
 
